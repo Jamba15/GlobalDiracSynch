@@ -28,7 +28,8 @@ Each of these components serves a specific purpose:
 ```
 - **`configurations/`**: Contains YAML files defining the parameter configurations used in the experiments and the 
   name of the folder where the results should be saved (`PaperResults.yml`).
-- **`MSF Analysis/`**: A directory that includes subdirectories (e.g., `StuartLandau_same_model`) for organizing results and models.
+- **`MSF Analysis/`**: A directory that includes subdirectories (e.g., `StuartLandau_same_model`) for organizing 
+results and models.
 - **`explore_stability.py`**: A script for exploring parameter stability using Ray Tune.
 - **`plot_results.py`**: A script for plotting and analyzing the results based on configurations.
 - **`functions_MSF.py`**: Contains utility functions used for Model Stability Function (MSF) computations.
@@ -64,7 +65,7 @@ parameter_space = {
 }
 
 meta_config = {
-    'configuration_name': 'TEST.yml',
+    'configuration_name': 'PaperResults.yml',
     'hyperparameters': parameter_space
 }
 
@@ -110,12 +111,13 @@ plot_b_star_intervals(df_mu0im_range, start_with_0_01=True)
 ```
 
 - **Configuration File**: The script reads from the configuration file (`PaperResults.yml`) to load experiment settings.
-- **`MSFDataHandler`**: Handles data loading and filtering based on conditions set in the script.
+- **`MSFDataHandler`**: Handles data loading and filtering based on conditions set in the script. As can be seen it 
+  can extract the csv files and make the dataset readily accessible.
 - **Plotting Function**: The `plot_b_star_intervals` function visualizes the filtered results, showing the stability intervals specified in the paper.
 
 ### Configuration File
 
-Ensure that the configuration file (`TEST.yml`) is properly set up with the necessary parameter ranges and other configurations required for your model. The configuration file should be structured in YAML format, specifying the parameters that `explore_stability.py` will explore.
+Ensure that the configuration file (`PaperResults.yml`) is properly set up with the necessary parameter ranges and other configurations required for your model. The configuration file should be structured in YAML format, specifying the parameters that `explore_stability.py` will explore.
 
 ## Customization
 

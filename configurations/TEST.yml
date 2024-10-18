@@ -1,0 +1,38 @@
+# parametri.yaml
+Global:
+  results_folder: 'MSF Analysis'
+  experiment_name: 'TEST'
+
+coupling_matrices:
+  B_path: ''
+
+LL: 80
+
+coupling_intensity:
+  # Nodes coupling intensity
+  sigma0re : 0.2
+  sigma0im : 0.3
+  beta0re : 1
+  beta0im : 1.1
+  mu0re : 1.0
+  mu0im : 2 # Opt
+
+  # Links coupling intensity
+  beta1re : 1
+  beta1im : 1.1
+  sigma1re : 0.2
+  sigma1im : 0.3 # nodes and link frequences equal with: sigma0im+beta1im*sigma1re/beta1re-beta0im*sigma0re/beta0re
+  mu1re : -0.5
+  mu1im : -2 # Opt
+
+  alpha0 : 0
+  alpha1 : 0
+
+temporal_parameters:
+  t_start: 0
+  t_end: 600
+
+save_trajectory:
+  trajectory_name: 'TEST'
+  trajectory_folder: !path 'trajectories/TEST/'
+  remove_old: False

@@ -1,5 +1,23 @@
+# Global Topological Dirac Synchronization (paper repository)
 
-# Stability Exploration and Analysis Repository
+**Authors:**  
+Timoteo Carletti<sup>1</sup>, Lorenzo Giambagli<sup>2</sup>, Riccardo Muolo<sup>3</sup>, Ginestra Bianconi<sup>4</sup>
+
+**Affiliations:**  
+<sup>1</sup> Department of Mathematics & naXys, Namur Institute for Complex Systems, University of Namur, Rue Grafé 2, B5000 Namur, Belgium  
+<sup>2</sup> Department of Physics, Freie Universität Berlin, Arnimallee 12, 14195, Berlin, Germany  
+<sup>3</sup> Department of Systems and Control Engineering, Institute of Science Tokyo (former Tokyo Tech), O-okayama 2-12-1, Meguro, Tokyo 152-8552, Japan  
+<sup>4</sup> School of Mathematical Sciences, Queen Mary University of London, London, E1 4NS, United Kingdom  
+
+## Abstract
+
+Synchronization is a fundamental dynamical state of interacting oscillators, observed in natural biological rhythms and in the brain. Global synchronization, which occurs when non-linear or chaotic oscillators placed on the nodes of a network display the same dynamics, has received great attention in network theory. 
+
+Here, we propose and investigate **Global Topological Dirac Synchronization** on higher-order networks such as cell and simplicial complexes. This is a state where oscillators associated with simplices and cells of arbitrary dimension, coupled by the Topological Dirac operator, operate in unison. By combining algebraic topology with non-linear dynamics and machine learning, we derive the topological conditions under which this state exists and the dynamical conditions under which it is stable. 
+
+We provide evidence of 1-dimensional simplicial complexes (networks) and 2-dimensional simplicial and cell complexes where Global Topological Dirac Synchronization can be observed. Our results highlight that Global Topological Dirac Synchronization is a possible dynamical state of simplicial and cell complexes that occurs only in some specific network topologies and geometries, the latter being determined by the weights of the higher-order network.
+
+## Stability Exploration and Analysis 
 
 This repository contains a set of scripts and functions used for exploring and analyzing model stability through parameter tuning and visualization. The main components of this repository are the scripts `explore_stability.py` and `plot_results.py`, which utilize a set of utility functions defined in various Python files (`functions_*.py`). The goal of these scripts is to automate parameter exploration and visualize results based on configurations defined by the user.
 Here's the markdown code reflecting the updated repository structure based on the image:
@@ -123,11 +141,3 @@ Ensure that the configuration file (`PaperResults.yml`) is properly set up with 
 
 - To modify the parameter ranges or configuration, adjust the `parameter_space` dictionary and `meta_config` values in `explore_stability.py`.
 - Update the filters in `plot_results.py` according to the specific criteria and data subsets you wish to visualize.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Contact
-
-For any questions or issues, please contact the repository maintainer or open an issue on the repository page.

@@ -1,0 +1,3 @@
+sigma0re,sigma0im,beta0re,beta0im,mu0re,mu0im,beta1re,beta1im,sigma1re,sigma1im,mu1re,mu1im,alpha0,alpha1,b_star,corresponding_negative_eigenvalues
+0.2,0.3,1,1.1,1.0,0.6000000000000032,1,1.1,0.2,0.3,-0.5,1.2000000000000028,0.0,0.0,[0.31 0.32 0.33 0.34 0.35 0.36 0.37],"[-0.02383997 -0.02029785 -0.01675045 -0.0131993  -0.00964556 -0.00609014
+ -0.00253375]"

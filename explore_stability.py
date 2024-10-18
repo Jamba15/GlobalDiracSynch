@@ -11,7 +11,7 @@ parameter_space = {
                    'mu0im': gs(ran(-3, 3, 0.1)),
                    }
 
-meta_config = {'configuration_name': 'TEST.yml',
+meta_config = {'configuration_name': 'PaperResults.yml',
                'hyperparameters': parameter_space}
 
 tuner = tune.run(

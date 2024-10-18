@@ -3,7 +3,7 @@ from functions_MSF import *
 limit_threads_to_N(14)
 
 # Insert here the name of the name of the configuration file
-configuration_file = 'TEST.yml'
+configuration_file = 'PaperResults.yml'
 
 # Load the configuration file
 test = LoadConfig(configuration_file)
